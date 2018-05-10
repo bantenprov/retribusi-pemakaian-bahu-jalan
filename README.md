@@ -12,3 +12,14 @@
 
 Retribusi Pemakaian Bahu Jalan
 
+## Installation
+
+~~
+$ composer require bantenprov/retribusi-pemakaian-bahu-jalan:dev-master
+~~
+
+## download
+
+~~~
+$ git clone https://github.com/bantenprov/retribusi-pemakaian-bahu-jalan
+~~~
