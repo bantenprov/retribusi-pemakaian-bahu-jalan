@@ -1,5 +1,5 @@
 {
-    "name": "bantenprov/pemakaian-bahu-jalan",
+    "name": "bantenprov/retribusi-pemakaian-bahu-jalan",
     "description": "Retribusi Pemakaian Bahu Jalan",
     "authors": [
         {
@@ -9,9 +9,9 @@
     ],
     "license": "MIT",
     "support": {
-      "source": "https://github.com/bantenprov/pemakaian-bahu-jalan,",
-      "issues": "https://github.com/bantenprov/pemakaian-bahu-jalan/issues",
-      "wiki": "https://github.com/bantenprov/pemakaian-bahu-jalan/wiki"
+      "source": "https://github.com/bantenprov/retribusi-pemakaian-bahu-jalan,",
+      "issues": "https://github.com/bantenprov/retribusi-pemakaian-bahu-jalan/issues",
+      "wiki": "https://github.com/bantenprov/retribusi-pemakaian-bahu-jalan/wiki"
     },
     "require": {
         "php": ">=7.0",
