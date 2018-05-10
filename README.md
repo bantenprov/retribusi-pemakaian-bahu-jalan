@@ -14,9 +14,9 @@ Retribusi Pemakaian Bahu Jalan
 
 ## Installation
 
-~~
+~~~
 $ composer require bantenprov/retribusi-pemakaian-bahu-jalan:dev-master
-~~
+~~~
 
 ## download
 
