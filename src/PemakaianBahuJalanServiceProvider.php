@@ -73,7 +73,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function routeHandle()
     {
-        $this->loadRoutesFrom(__DIR__.'/../../routes/routes.php');
+        $this->loadRoutesFrom(__DIR__.'/routes/routes.php');
     }
 
     /**
@@ -83,7 +83,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function configHandle()
     {
-        $packageConfigPath = __DIR__.'/../../config/config.php';
+        $packageConfigPath = __DIR__.'/config/config.php';
         $appConfigPath     = config_path('pemakaian-bahu-jalan.php');
 
         $this->mergeConfigFrom($packageConfigPath, 'pemakaian-bahu-jalan');
@@ -100,7 +100,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function langHandle()
     {
-        $packageTranslationsPath = __DIR__.'/../../resources/lang';
+        $packageTranslationsPath = __DIR__.'/resources/lang';
 
         $this->loadTranslationsFrom($packageTranslationsPath, 'pemakaian-bahu-jalan');
 
@@ -116,7 +116,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function viewHandle()
     {
-        $packageViewsPath = __DIR__.'/../../resources/views';
+        $packageViewsPath = __DIR__.'/resources/views';
 
         $this->loadViewsFrom($packageViewsPath, 'pemakaian-bahu-jalan');
 
@@ -132,7 +132,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function assetHandle()
     {
-        $packageAssetsPath = __DIR__.'/../../resources/assets';
+        $packageAssetsPath = __DIR__.'/resources/assets';
 
         $this->publishes([
             $packageAssetsPath => public_path('vendor/pemakaian-bahu-jalan'),
@@ -146,7 +146,7 @@ class PemakaianBahuJalanServiceProvider extends ServiceProvider
      */
     protected function migrationHandle()
     {
-        $packageMigrationsPath = __DIR__.'/../../database/migrations';
+        $packageMigrationsPath = __DIR__.'/database/migrations';
 
         $this->loadMigrationsFrom($packageMigrationsPath);
 
