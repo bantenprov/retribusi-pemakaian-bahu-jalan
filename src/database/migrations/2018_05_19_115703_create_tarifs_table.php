@@ -1,7 +1,9 @@
 <?php
 
+use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
+use Kalnoy\Nestedset\NestedSet;
 
 class CreateTarifsTable extends Migration {
 
@@ -12,8 +14,9 @@ class CreateTarifsTable extends Migration {
 			$table->string('uuid', 191)->unique();
 			$table->string('uraian', 191)->unique();
 			$table->boolean('tarif')->default(0);
-			$table->double('jasa_pelayanan');
-			$table->double('jasa_sarana');
+			$table->double('wilayah_kota');
+			$table->double('wilayah_kabupaten');
+            NestedSet::columns($table);			
 			$table->string('satuan', 191)->index();
 			$table->timestamps();
 			$table->softDeletes();
