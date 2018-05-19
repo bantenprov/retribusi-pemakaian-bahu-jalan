@@ -25,5 +25,15 @@
             "Bantenprov\\PemakaianBahuJalan\\": "src"
         }
     },
-    "minimum-stability": "dev"
+    "minimum-stability": "dev",
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bantenprov\\MasterTarif\\MasterTarifServiceProvider"
+            ],
+            "aliases": {                
+                "MasterTarif": "Bantenprov\\MasterTarif\\Facades\\MasterTarif"
+            }
+        }
+    }
 }
