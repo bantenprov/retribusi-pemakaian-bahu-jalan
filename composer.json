@@ -29,10 +29,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Bantenprov\\MasterTarif\\MasterTarifServiceProvider"
+                "Bantenprov\\PemakaianBahuJalan\\PemakaianBahuJalanServiceProvider"
             ],
             "aliases": {                
-                "MasterTarif": "Bantenprov\\MasterTarif\\Facades\\MasterTarif"
+                "MasterTarif": "Bantenprov\\PemakaianBahuJalan\\Facades\\PemakaianBahuJalan"
             }
         }
     }
