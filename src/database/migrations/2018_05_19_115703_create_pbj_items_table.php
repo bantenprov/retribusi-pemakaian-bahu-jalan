@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateItemsTable extends Migration {
+class CreatePbjItemsTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('items', function(Blueprint $table) {
+		Schema::create('pbj_items', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('uuid', 191)->unique();
 			$table->string('keterangan', 191)->nullable();
@@ -27,6 +27,6 @@ class CreateItemsTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('items');
+		Schema::drop('pbj_items');
 	}
 }

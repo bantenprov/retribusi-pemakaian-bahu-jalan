@@ -5,11 +5,11 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Kalnoy\Nestedset\NestedSet;
 
-class CreateTarifsTable extends Migration {
+class CreatePbjTarifsTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('tarifs', function(Blueprint $table) {
+		Schema::create('pbj_tarifs', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('uuid', 191)->unique();
 			$table->string('uraian', 191)->unique();
@@ -28,6 +28,6 @@ class CreateTarifsTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('tarifs');
+		Schema::drop('pbj_tarifs');
 	}
 }
