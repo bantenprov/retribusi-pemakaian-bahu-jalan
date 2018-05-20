@@ -3,11 +3,11 @@
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 
-class CreateCustomerRetribusiesTable extends Migration {
+class CreatePbjCustomerRetribusiesTable extends Migration {
 
 	public function up()
 	{
-		Schema::create('customer_retribusies', function(Blueprint $table) {
+		Schema::create('pbj_customer_retribusies', function(Blueprint $table) {
 			$table->increments('id');
 			$table->string('uuid', 191)->unique();
 			$table->timestamps();
@@ -21,6 +21,6 @@ class CreateCustomerRetribusiesTable extends Migration {
 
 	public function down()
 	{
-		Schema::drop('customer_retribusies');
+		Schema::drop('pbj_customer_retribusies');
 	}
 }
